@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo Tường Chào Xuân</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.gallery img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+body{
+    margin:0;
+    background:linear-gradient(#fff8ec,#ffe6ea);
+    line-height:1.9;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#e5ee64,#ff9900);
+    color:white;
+    text-align:center;
+    padding:50px 15px;
+}
+header h1{
+    font-size:40px;
+    margin:0;
+    letter-spacing:3px;
+}
+header p{
+    font-size:20px;
+    font-style:italic;
+}
+
+/* BANNER */
+.banner img{
+    width:100%;
+    max-height:380px;
+    object-fit:cover;
+}
+
+/* SECTION */
+section{
+    max-width:1000px;
+    margin:28px auto;
+    padding:35px 22px;
+    background:rgba(255,255,255,0.92);
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+section h2{
+    color:#b30000;
+    border-left:7px solid #ff9900;
+    padding-left:12px;
+    font-size:26px;
+}
+section p{
+    margin-top:14px;
+    text-align:justify;
+    font-size:19px;
+}
+.section-img{
+    width:100%;
+    max-width:540px;
+    display:block;
+    margin:24px auto;
+    border-radius:14px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:14px;
+}
+.gallery img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+    margin-top:40px;
+    background:#b30000;
+    color:white;
+    text-align:center;
+    padding:28px 12px;
+    font-size:18px;
+}
+
+/* HOA ĐÀO RƠI */
+#petal-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:9999;
+}
+.petal{
+    position:absolute;
+    top:-40px;
+    animation:fall linear infinite;
+}
+@keyframes fall{
+    0%{transform:translateY(0) rotate(0deg);opacity:1;}
+    100%{transform:translateY(110vh) rotate(360deg);opacity:0;}
+}
+
+/* MOBILE */
+@media (max-width:600px){
+    header h1{font-size:28px;}
+    header p{font-size:16px;}
+    section{padding:25px 16px;margin:20px 10px;}
+    section h2{font-size:22px;}
+    section p{font-size:17px;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="petal-container"></div>
+
+<header>
+    <h1>BÁO TƯỜNG CHÀO XUÂN</h1>
+    <p>Mừng Đảng – Mừng Xuân – Khát vọng tuổi trẻ</p>
+</header>
+
+<div class="banner">
+    <img src="cay-dao.png">
+</div>
+
+<section>
+<h2>🌸 LỜI NGỎ – XUÂN VỀ TRÊN QUÊ HƯƠNG</h2>
+<p>
+Khi những cánh hoa đào khẽ rung mình trong gió xuân, cũng là lúc đất trời bước sang
+một vòng tuần hoàn mới. Xuân về mang theo hơi ấm, mang theo niềm tin và hy vọng,
+đánh thức trong mỗi người con đất Việt tình yêu quê hương sâu sắc.
+</p>
+<p>
+Báo tường chào xuân là nơi tập thể lớp chúng em gửi gắm những suy nghĩ,
+cảm xúc và ước mơ của tuổi trẻ. Qua từng dòng chữ,
+chúng em mong muốn lưu giữ vẻ đẹp truyền thống của ngày Tết
+và khẳng định tinh thần trách nhiệm của thế hệ trẻ hôm nay.
+</p>
+</section>
+
+<section>
+<h2>🎋 Ý NGHĨA THIÊNG LIÊNG CỦA NGÀY TẾT</h2>
+<p>
+Tết Nguyên Đán không chỉ là ngày khởi đầu của một năm mới,
+mà còn là dịp để mỗi người nhìn lại chặng đường đã qua,
+trân trọng những thành quả đạt được và rút ra bài học cho tương lai.
+</p>
+<p>
+Ngày Tết là lúc con cháu tưởng nhớ tổ tiên, bày tỏ lòng biết ơn đối với những người
+đã sinh thành và nuôi dưỡng mình. Đây cũng là dịp để gắn kết tình thân,
+giữ gìn và phát huy những giá trị văn hóa tốt đẹp của dân tộc Việt Nam.
+</p>
+<img src="GD.jpg" class="section-img">
+</section>
+
+<section>
+<h2>🎍 PHONG TỤC NGÀY TẾT CỔ TRUYỀN</h2>
+<p>
+Từ bao đời nay, phong tục ngày Tết đã trở thành nét đẹp không thể thiếu
+trong đời sống tinh thần của người Việt. Những ngày cuối năm,
+mọi nhà đều tất bật dọn dẹp, trang hoàng nhà cửa với mong ước
+xua đi những điều không may của năm cũ.
+</p>
+<p>
+Hình ảnh bánh chưng xanh, mâm ngũ quả, câu đối đỏ
+không chỉ mang giá trị vật chất mà còn chứa đựng ý nghĩa nhân văn sâu sắc,
+thể hiện ước mong về một năm mới đủ đầy, hạnh phúc và bình an.
+</p>
+<img src="tet11.jpg" class="section-img">
+</section>
+
+<section>
+<h2>👨‍👩‍👧‍👦 TẾT – KHOẢNH KHẮC ĐOÀN VIÊN</h2>
+<p>
+Giữa nhịp sống hối hả, Tết là khoảng thời gian quý báu để các thành viên
+trong gia đình sum họp bên nhau. Bữa cơm tất niên không chỉ là bữa ăn,
+mà là biểu tượng của sự đoàn viên và yêu thương.
+</p>
+<p>
+Những câu chuyện được kể, những nụ cười được trao,
+tất cả tạo nên không khí ấm áp, giúp mỗi người thêm trân trọng
+giá trị của gia đình và tình thân ruột thịt.
+</p>
+<img src="tet3.jpg" class="section-img">
+</section>
+
+<section>
+<h2>🧧 TUỔI THƠ VÀ NIỀM VUI LÌ XÌ</h2>
+<p>
+Đối với trẻ em, Tết là những ngày mong đợi nhất trong năm.
+Tiếng cười giòn tan, bộ quần áo mới và những phong bao lì xì đỏ thắm
+là ký ức đẹp đẽ theo suốt tuổi thơ của mỗi người.
+</p>
+<img src="tet2.jpg" class="section-img">
+</section>
+<p>
+Lì xì không chỉ mang ý nghĩa vật chất,
+mà còn là lời chúc may mắn, bình an mà người lớn gửi gắm
+đến thế hệ tương lai của đất nước.
+</p>
+<img src="img/tet3.jpg" class="section-img">
+</section>
+
+<footer>
+<p>
+BÁO TƯỜNG MỪNG XUÂN 2026<br>
+Tập thể lớp ___ – Tuổi trẻ hôm nay, tương lai ngày mai
+</p>
+</footer>
+
+<script>
+function createPetal(){
+    const p=document.createElement("img");
+    p.src="img/dao-petal.png";
+    p.className="petal";
+    p.style.left=Math.random()*window.innerWidth+"px";
+    p.style.width=(18+Math.random()*28)+"px";
+    p.style.animationDuration=(7+Math.random()*6)+"s";
+    document.getElementById("petal-container").appendChild(p);
+    setTimeout(()=>p.remove(),13000);
+}
+setInterval(createPetal,650);
+</script>
+tổ 1 
+</body>
+</html>
